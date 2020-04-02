@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <title>Sitio de Jorge Luévano Don J L</title>
     <meta content="Don J L" name="author">
     <meta content="Sitio con radio 2019" name="description">
@@ -29,15 +29,18 @@
     <section>
       <article id="articulo">
         <h2 id="titulo">Sir J L</h2>
-        <center> De Los 40's <audio src="http://91.121.134.23:8100/stream;" controls="controls">
-            No se soporta audio.</audio> Jazz <audio src="http://direct.franceinfo.fr/live/franceinfo-midfi.mp3"
-            controls="controls">No se soporta audio </audio> </center>
+        <center>
+           <ul>
+             <li> De Los 40's  <audio src="http://91.121.134.23:8100/stream;" controls> No se soporta audio.</audio> </li><br>
+             <li> Jazz <audio src="http://direct.franceinfo.fr/live/franceinfo-midfi.mp3" controls>No se soporta audio </audio> </li>
+           </ul>
+        </center>
+        <br>
         <br>
       </article>
     </section>
     <footer>
-      <p> © <a target="_top" title="Mi sitio" href="http://www.jorge.tk">
-          Grandpa Jorge Luévano</a>
+      <p> © <a target="_top" title="Mi sitio" href="http://www.jorge.tk"> Grandpa Jorge Luévano</a>
         <?php date_default_timezone_set('America/Mexico_City') ?> -
         <?php print date( 'd - m - Y H:i:s');?> </p>
     </footer>
