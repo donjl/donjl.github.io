@@ -1,14 +1,85 @@
 <!DOCTYPE html>
-<html lang="es" >
+<html lang="es">
 <head>
-<meta charset="utf-8" />
-<title>Don Sir Site</title>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>	
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Sir J L Site</title>
 </head>
 <body>
-<script>
-<!--
-document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22es%22%3E%0A%3Chead%3E%0A%09%3Cmeta%20charset%3D%22utf-8%22%3E%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22x-ua-compatible%22%20content%3D%22ie%3Dedge%22%3E%0A%09%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1%22%20/%3E%0A%09%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css%22%3E%0A%09%3Cscript%20src%3D%22https%3A//code.jquery.com/jquery-1.12.4.js%22%3E%3C/script%3E%0A%09%3Cscript%20src%3D%22https%3A//code.jquery.com/ui/1.12.1/jquery-ui.js%22%3E%3C/script%3E%0A%09%3Cscript%20src%3D%22script.js%22%3E%3C/script%3E%09%0A%09%3Clink%20rel%3D%22stylesheet%22%20type%3D%22text/css%22%20href%3D%22style.css%22%20/%3E%0A%09%3Ctitle%3ESir%20J%20L%20Site%3C/title%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%09%3Cdiv%20id%3D%22desktop%22%3E%0A%09%09%3Cdiv%20class%3D%22window%20closed%22%20data-title%3D%22Sitios%22%3E%0A%20%20%20%09%09%3Ch2%3EMis%20sitios%20favoritos%3A%3C/h2%3E%0A%20%20%20%09%09%3Chr%20/%3E%0A%09%20%20%20%20%20%3Cul%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//luevano.mooo.com%22%20title%3D%22luevano.mooo.com%22%20target%3D%22_blank%22%3Eluevano.mooo.com%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//aguascalientes.mooo.com%22%20title%3D%22aguascalientes.mooo.com%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20target%3D%22_blank%22%3Eaguascalientes.mooo.com%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//sirgerado.mooo.com%22%20title%3D%22sirgerado.mooo.com%22%20target%3D%22_blank%22%3Esirgerado.mooo.com%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//sirjl.mooo.com%22%20title%3D%22sirjl.mooo.com%22%20target%3D%22_blank%22%3Esirjl.mooo.com%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//sirjorge.mooo.com%22%20title%3D%22sirjorge.mooo.com%22%20target%3D%22_blank%22%3Esirjorge.mooo.com%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//gerardo.us.to%22%20title%3D%22gerardo.us.to%22%20target%3D%22_blank%22%3Egerardo.us.to%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//jorgemex.us.to%22%20title%3D%22jorgemex.us.to%22%20target%3D%22_blank%22%3Ejorgemex.us.to%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cli%3E%3Ca%20href%3D%22http%3A//sirjorge.us.to%22%20title%3D%22sirjorge.us.to%22%20target%3D%22_blank%22%3Esirjorge.us.to%3C/a%3E%3C/li%3E%0A%20%20%20%20%20%20%20%20%3C/ul%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22window%20closed%22%20data-title%3D%22Radio%22%3E%0A%09%09%09%3Ch2%3EMis%20estaciones%20de%20radio%20favoritas%3A%3C/h2%3E%0A%09%09%09%3Chr%20/%3E%0A%09%09%09%3Ctable%20border%3D%221%22%3E%0A%20%20%20%09%09%09%3Ctbody%3E%0A%20%20%20%09%09%09%20%20%3Ctr%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3EM%FAsica%20de%20los%2040%27s%20%3C/td%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3E%3Caudio%20src%3D%22http%3A//91.121.134.23%3A8100/stream%3B%22%20controls%3D%22controls%22%3E%3C/audio%3E%3C/td%3E%0A%20%20%20%09%09%09%20%20%3C/tr%3E%20%20%20%09%09%09%20%20%3Ctr%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3EUn%20buen%20jazz%20%3C/td%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3E%3Caudio%20src%3D%22http%3A//stream.srg-ssr.ch/m/rsj/aacp_96%22%20controls%3D%22controls%22%3E%3C/audio%3E%3C/td%3E%0A%20%20%20%09%09%09%20%20%3C/tr%3E%20%20%20%09%09%09%20%20%3Ctr%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3EHasta%20que%20el%20cuerpo%20aguante.%20%3C/td%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3E%3Caudio%20src%3D%22https%3A//s01.digitalserver.org/8110/stream%22%20controls%3D%22controls%22%3E%3C/audio%3E%3C/td%3E%0A%20%20%20%09%09%09%20%20%3C/tr%3E%20%20%20%09%09%09%20%20%3Ctr%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3EBoleros%20inmortales%20%3C/td%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3E%3Caudio%20src%3D%22https%3A//stream.zenolive.com/b10wvksv7mruv.aac%22%20controls%3D%22controls%22%3E%3C/audio%3E%3C/td%3E%0A%20%20%20%09%09%09%20%20%3C/tr%3E%20%20%20%09%09%09%20%20%3Ctr%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3ENoticias%20de%20la%20BI%20%3C/td%3E%0A%20%20%20%09%09%09%20%20%20%20%3Ctd%3E%3Caudio%20src%3D%22http%3A//201.159.48.107%3A2860/%22%20controls%3D%22controls%22%3E%3C/audio%3E%3C/td%3E%0A%20%20%20%09%09%09%20%20%3C/tr%3E%09%09%0A%09%09%09%3C/tbody%3E%0A%09%09%09%3C/table%3E%3Cbr%20%20/%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22window%20closed%22%20data-title%3D%22Tercero%22%3E%0A%09%09%09Third%20window%20starts%20closed%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22window%22%20data-title%3D%22Bienvenido%22%3E%0A%09%09%09%3Ch1%3EBienvenido%20al%20sitio%20de%20Sir%3C/h1%3E%3Chr%20/%3E%0A%09%09%09%3Cp%3EMinimize%20the%20windows%20to%20the%20taskbar%2C%20make%20them%20full%20screen%20or%20close%20them.%3C/p%3E%0A%09%09%09%3Cp%3EDrag%20the%20title%20bar%20to%20move%20the%20windows%20or%20resize%20them%20from%20the%20bottom%20right%20corner.%3C/p%3E%0A%09%09%09%3Chr%20/%3E%0A%09%09%09%3Cp%3E%3Cstrong%3ESitio%20de%20enlaces%20a%20mis%20preferencias%20de%20...%3C/strong%3E%3C/p%3E%0A%09%09%3C/div%3E%0A%09%09%0A%09%09%3Cdiv%20id%3D%22taskbar%22%3E%09%09%0A%09%09%3C/div%3E%0A%09%09%0A%09%09%3Cdiv%20id%3D%22icons%22%3E%0A%09%09%09%3Ca%20class%3D%22openWindow%22%20data-id%3D%220%22%3ESitios%3C/a%3E%0A%09%09%09%3Ca%20class%3D%22openWindow%22%20data-id%3D%221%22%3ERadio%3C/a%3E%0A%09%09%09%3Ca%20class%3D%22openWindow%22%20data-id%3D%222%22%3ETercero%3C/a%3E%0A%09%09%09%3Ca%20class%3D%22openWindow%22%20data-id%3D%223%22%3EBienvenido%3C/a%3E%0A%09%09%3C/div%3E%0A%09%20%20%20%3Ca%20href%3D%22http%3A//donjl.github.io/%22%20rel%3D%22nofollow%22%20target%3D%22_blank%22%20id%3D%22templateLink%22%3E%20%26copy%3B%20Don%20JL%20site%3C/a%3E%09%0A%09%3C/div%3E%0A%3C/body%3E%0A%0A%3C/html%3E"));
-//-->
-</script>
+<div>
+<br /><br />
+<h1>Sir Jorge's Site</h1>
+</div>
+	<div id="desktop">
+		<div class="window closed" data-title="Sitios">
+   		<h2>Mis sitios favoritos:</h2>
+   		<hr />
+	     <ul>
+          <li><a href="http://luevano.mooo.com" title="luevano.mooo.com" target="_blank">luevano.mooo.com</a></li>
+          <li><a href="http://aguascalientes.mooo.com" title="aguascalientes.mooo.com" target="_blank">aguascalientes.mooo.com</a></li>
+          <li><a href="http://sirgerado.mooo.com" title="sirgerado.mooo.com" target="_blank">sirgerado.mooo.com</a></li>
+          <li><a href="http://sirjl.mooo.com" title="sirjl.mooo.com" target="_blank">sirjl.mooo.com</a></li>
+          <li><a href="http://sirjorge.mooo.com" title="sirjorge.mooo.com" target="_blank">sirjorge.mooo.com</a></li>
+          <li><a href="http://gerardo.us.to" title="gerardo.us.to" target="_blank">gerardo.us.to</a></li>
+          <li><a href="http://jorgemex.us.to" title="jorgemex.us.to" target="_blank">jorgemex.us.to</a></li>
+          <li><a href="http://sirjorge.us.to" title="sirjorge.us.to" target="_blank">sirjorge.us.to</a></li>
+        </ul>
+		</div>
+		<div class="window" data-title="Radio">
+			<h2>Mis estaciones de radio favoritas:</h2>
+			<hr />
+			<table border="1">
+   			<tbody>
+   			  <tr>
+   			    <td>Música de los 40's </td>
+   			    <td><audio src="http://91.121.134.23:8100/stream;" controls="controls"></audio></td>
+   			  </tr>   			  
+   			  <tr>
+   			    <td>Un buen jazz </td>
+   			    <td><audio src="http://stream.srg-ssr.ch/m/rsj/aacp_96" controls="controls"></audio></td>
+   			  </tr>   			  <tr>
+   			    <td>Hasta que el cuerpo aguante. </td>
+   			    <td><audio src="https://s01.digitalserver.org/8110/stream" controls="controls"></audio></td>
+   			  </tr>   			  <tr>
+   			    <td>Boleros inmortales </td>
+   			    <td><audio src="https://stream.zenolive.com/b10wvksv7mruv.aac" controls="controls"></audio></td>
+   			  </tr>   			  <tr>
+   			    <td>Noticias de la BI </td>
+   			    <td><audio src="http://201.159.48.107:2860/" controls="controls"></audio></td>
+   			  </tr>		
+			</tbody>
+			</table><br  />
+		</div>
+		<div class="window closed" data-title="Tercero">
+		<h1>Ventana libre para uso</h1>
+		<hr />
+			<p>Esta tercera ventana inica oculta o cerrada.</p>
+		</div>
+		<div class="window" data-title="Bienvenido">
+			<h1>Bienvenido al sitio de Sir</h1><hr />
+			<p>Minimize the windows to the taskbar, make them full screen or close them.</p>
+			<p>Drag the title bar to move the windows or resize them from the bottom right corner.</p>
+			<hr />
+			<p><strong>Sitio de enlaces a mis preferencias de ...</strong></p>
+		</div>
+		
+		<div id="taskbar">		
+		</div>
+		
+		<div id="icons">
+			<a class="openWindow" data-id="0">Sitios</a>
+			<a class="openWindow" data-id="1">Radio</a>
+			<a class="openWindow" data-id="2">Tercero</a>
+			<a class="openWindow" data-id="3">Bienvenido</a>
+		</div>
+	   <a href="http://donjl.github.io/" rel="nofollow" target="_blank" id="templateLink"> &copy; Don JL site</a>	
+	</div>
 </body>
+
 </html>
